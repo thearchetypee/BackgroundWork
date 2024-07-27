@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -38,6 +39,11 @@
             android:name=".boundService.BoundServiceActivity"
             android:exported="true"
             android:label="Bound Service Activity"
+            android:theme="@style/Theme.BackgroundWork" />
+        <activity
+            android:name=".foregroundService.ForegroundServiceActivity"
+            android:exported="true"
+            android:label="Foreground Service Activity"
             android:theme="@style/Theme.BackgroundWork" />
     </application>
 
