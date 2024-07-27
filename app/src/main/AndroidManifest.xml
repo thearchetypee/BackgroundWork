@@ -28,6 +28,11 @@
             android:name=".intentservice.ExampleIntentService"
             android:enabled="true"
             android:exported="false"/>
+
+        <service
+            android:name=".backgroundservice.BackgroundService"
+            android:enabled="true"
+            android:exported="false" />
     </application>
 
 </manifest>

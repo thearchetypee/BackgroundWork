@@ -1,5 +1,6 @@
 package com.thearchetypee.backgroundwork
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -17,6 +18,8 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import com.thearchetypee.backgroundwork.backgroundservice.BackgroundService
+import com.thearchetypee.backgroundwork.intentservice.ExampleIntentService
 import com.thearchetypee.backgroundwork.ui.theme.BackgroundWorkTheme
 
 class MainActivity : ComponentActivity() {
@@ -30,11 +33,13 @@ class MainActivity : ComponentActivity() {
                         Greeting {
                             when (it) {
                                 Buttons.IntentService -> {
-
+                                    val exampleIntentService = Intent(this, ExampleIntentService::class.java)
+                                    startService(exampleIntentService)
                                 }
 
                                 Buttons.Service -> {
-
+                                    val backgroundService = Intent(this, BackgroundService::class.java)
+                                    startService(backgroundService)
                                 }
 
                                 Buttons.BoundService -> {
