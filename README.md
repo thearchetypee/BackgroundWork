@@ -56,6 +56,6 @@ add this
 
 ## 📞 Contact
 
-Twitter - [@thearchetypee](https://twitter.com/thearchetypee) -
+Twitter - [@thearchetypee](https://twitter.com/thearchetypee)
 
-Project Link: [https://github.com/the-archetypee/BackgroundWork](https://github.com/thearchetypee/BackgroundWork)
+Project Link: [https://github.com/thearchetypee/BackgroundWork](https://github.com/thearchetypee/BackgroundWork)
