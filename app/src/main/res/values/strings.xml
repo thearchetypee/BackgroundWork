@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">BackgroundWork</string>
+    <string name="title_activity_work_manager">WorkManagerActivity</string>
 </resources>

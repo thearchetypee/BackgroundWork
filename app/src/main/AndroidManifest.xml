@@ -25,16 +25,11 @@
             </intent-filter>
         </activity>
 
-        <service
-            android:name=".intentservice.ExampleIntentService"
-            android:enabled="true"
-            android:exported="false"/>
-
-        <service
-            android:name=".backgroundservice.BackgroundService"
-            android:enabled="true"
-            android:exported="false" />
-
+        <activity
+            android:name=".workmanager.WorkManagerActivity"
+            android:exported="false"
+            android:label="@string/title_activity_work_manager"
+            android:theme="@style/Theme.BackgroundWork" />
         <activity
             android:name=".boundService.BoundServiceActivity"
             android:exported="true"
@@ -45,6 +40,26 @@
             android:exported="true"
             android:label="Foreground Service Activity"
             android:theme="@style/Theme.BackgroundWork" />
+
+        <service
+            android:name=".intentservice.ExampleIntentService"
+            android:enabled="true"
+            android:exported="false"/>
+
+        <service
+            android:name=".backgroundservice.BackgroundService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <service
+            android:name=".boundService.BoundService"
+            android:enabled="true"
+            android:exported="false" />
+        <service
+            android:name=".foregroundService.ForegroundService"
+            android:enabled="true"
+            android:exported="false"
+            android:foregroundServiceType="dataSync" />
     </application>
 
 </manifest>
