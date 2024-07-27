@@ -19,6 +19,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.thearchetypee.backgroundwork.backgroundservice.BackgroundService
+import com.thearchetypee.backgroundwork.boundService.BoundServiceActivity
 import com.thearchetypee.backgroundwork.intentservice.ExampleIntentService
 import com.thearchetypee.backgroundwork.ui.theme.BackgroundWorkTheme
 
@@ -43,7 +44,8 @@ class MainActivity : ComponentActivity() {
                                 }
 
                                 Buttons.BoundService -> {
-
+                                    val boundService = Intent(this, BoundServiceActivity::class.java)
+                                    startActivity(boundService)
                                 }
 
                                 Buttons.ForegroundService -> {

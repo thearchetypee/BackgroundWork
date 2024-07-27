@@ -33,6 +33,12 @@
             android:name=".backgroundservice.BackgroundService"
             android:enabled="true"
             android:exported="false" />
+
+        <activity
+            android:name=".boundService.BoundServiceActivity"
+            android:exported="true"
+            android:label="Bound Service Activity"
+            android:theme="@style/Theme.BackgroundWork" />
     </application>
 
 </manifest>
