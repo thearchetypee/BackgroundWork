@@ -29,19 +29,21 @@ This project serves as a comprehensive playground for exploring various backgrou
 
 Each component is implemented in its own module or package. Navigate through the codebase to explore different implementations:
 
-- `/app/src/main/java/com/example/backgroundwork/services/`
-- `/app/src/main/java/com/example/backgroundwork/workmanager/`
-- `/app/src/main/java/com/example/backgroundwork/broadcastreceiver/`
-- `/app/src/main/java/com/example/backgroundwork/alarmmanager/`
+- `/app/src/main/java/com/thearchetypee/backgroundwork/backgroundservice/`
+- `/app/src/main/java/com/thearchetypee/backgroundwork/workmanager/`
+- `/app/src/main/java/com/thearchetypee/backgroundwork/fcm/`
+- `/app/src/main/java/com/thearchetypee/backgroundwork/foregroundServie/`
+- `/app/src/main/java/com/thearchetypee/backgroundwork/boundService/`
+- `/app/src/main/java/com/thearchetypee/backgroundwork/intentservice/`
 
 ## 🎤 Related Talk
 
 For a deep dive into the concepts demonstrated in this playground, check out my talk:
 
-[Mastering Android Background Processing: From Services to WorkManager](https://yourtalklink.com)
+[Background Work in Android: Strategies and Best Practices](android-worldwide.com/register/)
 
 In this presentation, I cover:
-- The evolution of background processing in Android
+- Background Work APIs
 - Best practices for implementing each component
 - Choosing the right tool for your background processing needs
 - Performance considerations and battery optimization techniques
